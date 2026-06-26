@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 export const useStore = create((set) => ({
-  isPreloaderFinished: false,
+  isPreloaderFinished: true, // Temporarily bypass the preloader
   setPreloaderFinished: (status) => set({ isPreloaderFinished: status }),
   
   isAudioPlaying: false,
